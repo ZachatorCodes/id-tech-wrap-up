@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/id-tech-wrap-up/static/css/main.e6bfd456.css",
+    "main.js": "/id-tech-wrap-up/static/js/main.3a5e1a00.js",
+    "index.html": "/id-tech-wrap-up/index.html",
+    "main.e6bfd456.css.map": "/id-tech-wrap-up/static/css/main.e6bfd456.css.map",
+    "main.3a5e1a00.js.map": "/id-tech-wrap-up/static/js/main.3a5e1a00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6bfd456.css",
+    "static/js/main.3a5e1a00.js"
+  ]
+}
