@@ -1,23 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
 function App() {
+  const [lessonInfo, setLessonInfo] = useState({
+    name: "",
+    topic: "",
+    nextLesson: "",
+    mainContent: ""
+  });
+
+  function handleChange(e) {
+    const name = e.target.name;
+    const value = e.target.value;
+    setLessonInfo({
+      ...lessonInfo,
+      [name]: value,
+    });
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <input
+          placeholder="Name"
+          name="name"
+          value={lessonInfo.name}
+          onChange={handleChange}
+        ></input>
+        <input
+          placeholder="Topic"
+          name="topic"
+          value={lessonInfo.topic}
+          onChange={handleChange}
+        ></input>
+        <br />
+        <textarea
+          placeholder="Main Content"
+          name="mainContent"
+          value={lessonInfo.mainContent}
+          onChange={handleChange}
+        ></textarea>
+        <textarea
+          placeholder="Next Lesson"
+          name="nextLesson"
+          value={lessonInfo.nextLesson}
+          onChange={handleChange}
+        ></textarea>
+      </form>
+      <p>
+        {lessonInfo.name} did an amazing job today! Since I haven't seen{" "}
+        {lessonInfo.name} in a little while, we started the session off by
+        catching up a little bit with an icebreaker activity. It's always
+        great to hear how {lessonInfo.name} is doing! After that, we hopped on
+        over to continue working on {lessonInfo.topic}! {lessonInfo.mainContent}. Overall, I would say that
+        it was an awesome session, and {lessonInfo.name} did a great job
+        absorbing and applying all of the concepts that we covered today. For
+        next time, we'll {lessonInfo.nextLesson}!
+      </p>
     </div>
   );
 }
