@@ -51,10 +51,10 @@ function App() {
         {lessonInfo.name} in a little while, we started the session off by
         catching up a little bit with an icebreaker activity. It's always
         great to hear how {lessonInfo.name} is doing! After that, we hopped on
-        over to continue working on {lessonInfo.topic}! {lessonInfo.mainContent}. Overall, I would say that
+        over to continue working on {lessonInfo.topic}! {lessonInfo.mainContent} Overall, I would say that
         it was an awesome session, and {lessonInfo.name} did a great job
         absorbing and applying all of the concepts that we covered today. For
-        next time, we'll {lessonInfo.nextLesson}!
+        next time, we'll {lessonInfo.nextLesson}
       </p>
     </div>
   );
