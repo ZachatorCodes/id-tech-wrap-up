@@ -63,7 +63,7 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
             rows={5}
             sx={{ marginBottom: 2, width: "95%", background: "#ffffff" }}
           ></TextField>
-          <RadioGroup
+          {/* <RadioGroup
             background="#ffffff"
             row
             name="newStudent"
@@ -86,7 +86,7 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
                 labelPlacement="top"
               />
             </Container>
-          </RadioGroup>
+          </RadioGroup> */}
         </Box>
       </Paper>
     </Container>
