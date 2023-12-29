@@ -23,17 +23,13 @@ function App() {
   return (
     <div className="App">
       <Container maxWidth="lg">
-            <Paper elevation={3} sx={{background: "#65a765"}}>
-              <Typography
-                padding="10px"
-                margin="24px"
-                align="center"
-                variant="h2"
-              >
-                Time For Wrap Up!
-              </Typography>
-            </Paper>
-          </Container>
+        <Paper elevation={3} sx={{ background: "#65a765" }}>
+          <Typography padding="10px" margin="24px" align="center" variant="h2">
+            Time For Wrap Up!
+          </Typography>
+        </Paper>
+      </Container>
+    
       <form>
         <input
           placeholder="Name"
