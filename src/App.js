@@ -1,3 +1,5 @@
+import { Container, Paper, TextField, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
 import { useState } from "react";
 
 function App() {
@@ -5,7 +7,8 @@ function App() {
     name: "",
     topic: "",
     nextLesson: "",
-    mainContent: ""
+    mainContent: "",
+    newStudent: false,
   });
 
   function handleChange(e) {
@@ -19,6 +22,18 @@ function App() {
 
   return (
     <div className="App">
+      <Container maxWidth="lg">
+            <Paper elevation={3} sx={{background: "#65a765"}}>
+              <Typography
+                padding="10px"
+                margin="24px"
+                align="center"
+                variant="h2"
+              >
+                Time For Wrap Up!
+              </Typography>
+            </Paper>
+          </Container>
       <form>
         <input
           placeholder="Name"
@@ -49,12 +64,13 @@ function App() {
       <p>
         {lessonInfo.name} did an amazing job today! Since I haven't seen{" "}
         {lessonInfo.name} in a little while, we started the session off by
-        catching up a little bit with an icebreaker activity. It's always
-        great to hear how {lessonInfo.name} is doing! After that, we hopped on
-        over to continue working on {lessonInfo.topic}! {lessonInfo.mainContent} Overall, I would say that
-        it was an awesome session, and {lessonInfo.name} did a great job
-        absorbing and applying all of the concepts that we covered today. For
-        next time, we'll {lessonInfo.nextLesson}
+        catching up a little bit with an icebreaker activity. It's always great
+        to hear how {lessonInfo.name} is doing! After that, we hopped on over to
+        continue working on {lessonInfo.topic}! {lessonInfo.mainContent}{" "}
+        Overall, I would say that it was an awesome session, and{" "}
+        {lessonInfo.name} did a great job absorbing and applying all of the
+        concepts that we covered today. For next time, we'll{" "}
+        {lessonInfo.nextLesson}
       </p>
     </div>
   );
