@@ -1,15 +1,4 @@
-import {
-  Container,
-  FormControlLabel,
-  Paper,
-  Radio,
-  RadioGroup,
-  TextField,
-  Typography,
-} from "@mui/material";
-import Box from "@mui/material/Box";
 import { useState } from "react";
-import AOrAnd from "./components/AOrAnd";
 import StudentForm from "./components/StudentForm";
 import Header from "./components/Header";
 import WrapUp from "./components/WrapUp";
