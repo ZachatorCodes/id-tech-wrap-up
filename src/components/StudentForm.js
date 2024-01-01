@@ -1,7 +1,10 @@
 import {
   Box,
   Container,
+  FormControlLabel,
   Paper,
+  Radio,
+  RadioGroup,
   TextField,
 } from "@mui/material";
 import React from "react";
@@ -10,10 +13,17 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
   function handleChange(e) {
     const name = e.target.name;
     const value = e.target.value;
-    setLessonInfo({
-      ...lessonInfo,
-      [name]: value,
-    });
+    if (name === "newStudent") {
+      setLessonInfo({
+        ...lessonInfo,
+        [name]: !lessonInfo.newStudent,
+      });
+    } else {
+      setLessonInfo({
+        ...lessonInfo,
+        [name]: value,
+      });
+    }
   }
 
   return (
@@ -60,7 +70,7 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
             rows={5}
             sx={{ marginBottom: 2, width: "95%", background: "#ffffff" }}
           ></TextField>
-          {/* <RadioGroup
+          <RadioGroup
             background="#ffffff"
             row
             name="newStudent"
@@ -83,7 +93,7 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
                 labelPlacement="top"
               />
             </Container>
-          </RadioGroup> */}
+          </RadioGroup>
         </Box>
       </Paper>
     </Container>
