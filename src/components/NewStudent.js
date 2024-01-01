@@ -12,7 +12,7 @@ function NewStudent({
   return (
     <Typography padding="10px" margin="24px" variant="h5">
       {name} did {preposition} {howDo} job today! Since this was my first time
-      meeting {name}, we started the session out with a little icebreaker
+      meeting {name}, we started the session with an icebreaker
       activity to get to know each other a little better. It was great to meet{" "}
       {name}! After that, we hopped on over to start working on {topic}.{" "}
       {mainContent} Overall, I would say that it was {preposition} {howDo}{" "}
