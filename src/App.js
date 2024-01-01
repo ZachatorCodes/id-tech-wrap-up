@@ -19,6 +19,7 @@ function App() {
       <StudentForm lessonInfo={lessonInfo} setLessonInfo={setLessonInfo} />
       <WrapUp
         name={lessonInfo.name}
+        firstLetter={lessonInfo.howDo[0]}
         howDo={lessonInfo.howDo}
         topic={lessonInfo.topic}
         nextLesson={lessonInfo.nextLesson}
