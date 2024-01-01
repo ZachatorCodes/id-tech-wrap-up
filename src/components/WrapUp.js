@@ -1,6 +1,7 @@
 import { Container, Paper, Typography } from "@mui/material";
 import React from "react";
-import AOrAnd from "./AOrAnd";
+import NewStudent from "./NewStudent";
+import ReturningStudent from "./ReturningStudent";
 
 function WrapUp({
   name,
@@ -11,19 +12,36 @@ function WrapUp({
   topic,
   newStudent,
 }) {
+  const preposition =
+    firstLetter === "a" ||
+    firstLetter === "e" ||
+    firstLetter === "i" ||
+    firstLetter === "o" ||
+    firstLetter === "u"
+      ? "an"
+      : "a";
   return (
     <Container>
       <Paper>
-        <Typography padding="10px" margin="24px" variant="h5">
-          {name} did <AOrAnd firstLetter={firstLetter} /> {howDo} job today!{" "}
-          Since I haven't seen {name} in a little while, we started the session
-          off by catching up a little bit with an icebreaker activity. It's
-          always great to hear how {name} is doing! After that, we hopped on
-          over to continue working on {topic}! {mainContent} Overall, I would
-          say that it was an awesome session, and {name} did a great job
-          absorbing and applying all of the concepts that we covered today.{" "}
-          {nextLesson}
-        </Typography>
+        {newStudent ? (
+          <NewStudent
+            name={name}
+            topic={topic}
+            howDo={howDo}
+            mainContent={mainContent}
+            nextLesson={nextLesson}
+            preposition={preposition}
+          />
+        ) : (
+          <ReturningStudent
+            name={name}
+            topic={topic}
+            howDo={howDo}
+            mainContent={mainContent}
+            nextLesson={nextLesson}
+            preposition={preposition}
+          />
+        )}
       </Paper>
     </Container>
   );
