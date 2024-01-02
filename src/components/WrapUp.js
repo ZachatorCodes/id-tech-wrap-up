@@ -1,4 +1,4 @@
-import { Container, Paper, Typography } from "@mui/material";
+import { Container, Paper } from "@mui/material";
 import React from "react";
 import NewStudent from "./NewStudent";
 import ReturningStudent from "./ReturningStudent";
