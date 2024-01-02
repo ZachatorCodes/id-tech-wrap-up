@@ -1,6 +1,6 @@
 # iD Tech Wrap Up Generator
 
-iD Tech Wrap Up Generator is a simple React application created to generate the wrap ups at the end of iD Tech online private lessons. The generator can be used for both new and returning students, and automatically creates the wrap up based on provided information.
+iD Tech Wrap Up Generator is a simple React application created to generate the wrap-ups at the end of iD Tech online private lessons. The generator can be used for both new and returning students, and automatically generates the wrap-up based on provided information.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
