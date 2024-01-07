@@ -4,7 +4,7 @@ import NewStudent from "./NewStudent";
 import ReturningStudent from "./ReturningStudent";
 
 function WrapUp({ name, howDo, mainContent, nextLesson, topic, newStudent }) {
-  const firstLetter = howDo.toLowerCase()[0]
+  const firstLetter = howDo.toLowerCase()[0];
   const preposition =
     firstLetter === "a" ||
     firstLetter === "e" ||
