@@ -1,5 +1,4 @@
 import { Container, Paper } from "@mui/material";
-import React from "react";
 import NewStudent from "./NewStudent";
 import ReturningStudent from "./ReturningStudent";
 

@@ -7,7 +7,6 @@ import {
   RadioGroup,
   TextField,
 } from "@mui/material";
-import React from "react";
 
 function StudentForm({ lessonInfo, setLessonInfo }) {
   function handleChange(e) {
