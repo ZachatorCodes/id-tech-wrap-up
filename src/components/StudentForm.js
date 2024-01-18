@@ -27,30 +27,56 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
 
   return (
     <Container maxWidth="lg">
-      <Paper sx={{ background: "#d7ffd7", paddingBottom: 2}} elevation={3}>
+      <Paper sx={{ background: "#d7ffd7", paddingBottom: 2 }} elevation={3}>
         <Box component="form" textAlign="center">
-          <TextField
-            value={lessonInfo.name}
-            onChange={handleChange}
-            name="name"
-            label="Name"
-            sx={{ margin: 2, width: "30%", minWidth: "300px", background: "#ffffff" }}
-          ></TextField>
-          <TextField
-            value={lessonInfo.topic}
-            onChange={handleChange}
-            name="topic"
-            label="Topic"
-            sx={{ margin: 2, width: "30%", minWidth: "300px", background: "#ffffff" }}
-          ></TextField>
-          <TextField
-            value={lessonInfo.howDo}
-            onChange={handleChange}
-            name="howDo"
-            label="How did you do today?"
-            sx={{ margin: 2, width: "30%", minWidth: "300px", background: "#ffffff" }}
-          ></TextField>
-          <br />
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            justifyContent="center"
+            alignItems="center"
+            gap={2}
+            padding={2}
+          >
+            <TextField
+              value={lessonInfo.name}
+              onChange={handleChange}
+              name="name"
+              label="Name"
+              sx={{
+                minWidth: "30%",
+                background: "#ffffff",
+                flexGrow: 1,
+                flexShrink: 1,
+                flexBasis: "200px",
+              }}
+            ></TextField>
+            <TextField
+              value={lessonInfo.topic}
+              onChange={handleChange}
+              name="topic"
+              label="Topic"
+              sx={{
+                minWidth: "30%",
+                background: "#ffffff",
+                flexGrow: 1,
+                flexShrink: 1,
+                flexBasis: "200px",
+              }}
+            ></TextField>
+            <TextField
+              value={lessonInfo.howDo}
+              onChange={handleChange}
+              name="howDo"
+              label="How did you do today?"
+              sx={{
+                minWidth: "30%",
+                background: "#ffffff",
+                flexGrow: 1,
+                flexShrink: 1,
+                flexBasis: "200px",
+              }}
+            ></TextField>
+          </Box>
           <TextField
             name="mainContent"
             label="Main Content"
@@ -75,21 +101,21 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
             name="newStudent"
             value={lessonInfo.newStudent}
             onChange={handleChange}
-            sx={{ paddingTop: 1.2}}
+            sx={{ paddingTop: 1.2 }}
           >
             <Container>
               <FormControlLabel
                 value={true}
                 control={<Radio />}
                 label="New Student"
-                sx={{ marginBottom: 2 }}
+                sx={{ marginBottom: 2, marginTop: 2 }}
                 labelPlacement="top"
               />
               <FormControlLabel
                 value={false}
                 control={<Radio />}
                 label="Returning Student"
-                sx={{ marginBottom: 2 }}
+                sx={{ marginBottom: 2, marginTop: 2 }}
                 labelPlacement="top"
               />
             </Container>
