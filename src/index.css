@@ -13,3 +13,14 @@ html {
 .radio-group:hover {
   outline: 1px black solid
 }
+
+.item-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-div > * {
+  flex: 1 1 120px;
+}
