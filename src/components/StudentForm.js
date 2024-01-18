@@ -34,21 +34,21 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
             onChange={handleChange}
             name="name"
             label="Name"
-            sx={{ margin: 2, width: "30%", background: "#ffffff" }}
+            sx={{ margin: 2, width: "30%", minWidth: "300px", background: "#ffffff" }}
           ></TextField>
           <TextField
             value={lessonInfo.topic}
             onChange={handleChange}
             name="topic"
             label="Topic"
-            sx={{ margin: 2, width: "30%", background: "#ffffff" }}
+            sx={{ margin: 2, width: "30%", minWidth: "300px", background: "#ffffff" }}
           ></TextField>
           <TextField
             value={lessonInfo.howDo}
             onChange={handleChange}
             name="howDo"
             label="How did you do today?"
-            sx={{ margin: 2, width: "30%", background: "#ffffff" }}
+            sx={{ margin: 2, width: "30%", minWidth: "300px", background: "#ffffff" }}
           ></TextField>
           <br />
           <TextField
