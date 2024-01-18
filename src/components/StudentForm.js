@@ -75,6 +75,7 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
             name="newStudent"
             value={lessonInfo.newStudent}
             onChange={handleChange}
+            sx={{ paddingTop: 1.2}}
           >
             <Container>
               <FormControlLabel
