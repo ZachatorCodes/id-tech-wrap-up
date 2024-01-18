@@ -12,3 +12,7 @@ html {
 .radio-group:hover {
   outline: 1px black solid
 }
+
+.paper-group:hover {
+  outline: 1px black solid
+}

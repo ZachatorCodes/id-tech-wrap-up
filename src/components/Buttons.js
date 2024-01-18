@@ -3,9 +3,9 @@ import React from 'react'
 
 function Buttons() {
   return (
-    <Container maxWidth="xs">
-      <Paper sx={{marginTop: 2}} align="center">
-        <Button sx={{margin: 2}}>Copy Wrap Up</Button><Button sx={{margin: 2}}>Show Wrap Up</Button>
+    <Container maxWidth="lg" disableGutters sx={{paddingLeft: 2, paddingRight: 2}}>
+      <Paper elevation={0} align="center" className='paper-group'>
+        <Button sx={{margin: 1}}>Copy Wrap Up</Button><Button sx={{margin: 1}}>Show Wrap Up</Button>
       </Paper>
     </Container>
   )
