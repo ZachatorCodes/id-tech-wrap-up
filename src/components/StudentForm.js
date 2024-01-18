@@ -27,7 +27,7 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
 
   return (
     <Container maxWidth="lg">
-      <Paper sx={{ background: "#d7ffd7" }} elevation={3}>
+      <Paper sx={{ background: "#d7ffd7", paddingBottom: 2}} elevation={3}>
         <Box component="form" textAlign="center">
           <TextField
             value={lessonInfo.name}
