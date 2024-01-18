@@ -70,7 +70,7 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
             sx={{ marginBottom: 2, width: "95%", background: "#ffffff" }}
           ></TextField>
           <RadioGroup
-            background="#ffffff"
+            className="radio-group"
             row
             name="newStudent"
             value={lessonInfo.newStudent}
