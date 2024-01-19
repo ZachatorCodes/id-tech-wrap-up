@@ -6,9 +6,9 @@ function Buttons({ showWrapUp, setShowWrapUp }) {
     setShowWrapUp(!showWrapUp);
   }
 
-  function handleCopyButton() {
-    console.log("Clicked")
-  }
+  // function handleCopyButton() {
+  //   console.log("Clicked")
+  // }
 
   return (
     <Container
