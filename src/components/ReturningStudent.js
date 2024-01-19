@@ -9,7 +9,7 @@ function ReturningStudent({
   preposition,
 }) {
   return (
-    <Typography variant="h5" id="wrap-up">
+    <Typography variant="p" id="wrap-up">
       {name} did {preposition} {howDo} job today! Since I haven't seen {name} in
       a little bit, we started the session with an icebreaker activity to catch
       up. It's always great to hear how {name} is doing! After that, we hopped

@@ -9,7 +9,7 @@ function NewStudent({
   preposition,
 }) {
   return (
-    <Typography variant="h5" id="wrap-up">
+    <Typography variant="p" id="wrap-up">
       {name} did {preposition} {howDo} job today! Since this was my first time
       meeting {name}, we started the session with an icebreaker activity to get
       to know each other a little better. It was great to meet {name}! After
