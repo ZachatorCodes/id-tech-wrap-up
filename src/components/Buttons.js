@@ -8,7 +8,14 @@ function Buttons({ showWrapUp, setShowWrapUp }) {
 
   function handleCopyButton() {
     const wrapUpText = document.getElementById("wrap-up").textContent;
-    navigator.clipboard.writeText(wrapUpText)
+    navigator.clipboard.writeText(wrapUpText).then(
+      () => {
+        alert("Text copied successfully :) congratulations!");
+      },
+      () => {
+        alert("Text could not be copied :( please try again later!");
+      }
+    );
   }
 
   return (
