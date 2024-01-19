@@ -13,6 +13,7 @@ function Buttons({ showWrapUp, setShowWrapUp }) {
       disableGutters
       sx={{ paddingLeft: 2, paddingRight: 2 }}
     >
+      <Paper className="paper-group" elevation={0}>
       <Button
         variant="contained"
         sx={{ marginRight: 2, marginTop: 1, marginBottom: 1 }}
@@ -26,6 +27,7 @@ function Buttons({ showWrapUp, setShowWrapUp }) {
       >
         {showWrapUp ? "Hide Wrap Up" : "Show Wrap Up"}
       </Button>
+      </Paper>
     </Container>
   );
 }
