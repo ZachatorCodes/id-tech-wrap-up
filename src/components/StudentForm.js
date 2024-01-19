@@ -40,7 +40,7 @@ function StudentForm() {
 
   return (
     <Container maxWidth="lg">
-      <Paper sx={{ background: "#d7ffd7", paddingBottom: 2, marginBottom: 2 }} elevation={3}>
+      <Paper sx={{ background: "#d7ffd7", marginBottom: 2 }} elevation={20}>
         <Box component="form" textAlign="center">
           <Container maxWidth="lg" sx={{ padding: 2 }} disableGutters>
             <Box
@@ -122,7 +122,7 @@ function StudentForm() {
             ></TextField>
           </Container>
           <Container
-            maxWidth="lg"
+            maxWidth="sm"
             disableGutters
             sx={{ paddingBottom: 2, paddingLeft: 2, paddingRight: 2 }}
           >
@@ -139,14 +139,14 @@ function StudentForm() {
                   value={true}
                   control={<Radio />}
                   label="New Student"
-                  sx={{ marginBottom: 2, marginTop: 2 }}
+                  sx={{ marginBottom: 1, marginTop: 1 }}
                   labelPlacement="top"
                 />
                 <FormControlLabel
                   value={false}
                   control={<Radio />}
                   label="Returning Student"
-                  sx={{ marginBottom: 2, marginTop: 2 }}
+                  sx={{ marginBottom: 1, marginTop: 1 }}
                   labelPlacement="top"
                 />
               </Container>
