@@ -4,7 +4,7 @@ function Header() {
   return (
     <Container maxWidth="md">
       <Paper elevation={10} sx={{ background: "#65a765" }}>
-        <Typography padding="10px" margin="24px" align="center" variant="h2">
+        <Typography padding="10px" margin="24px" align="center" variant="h4">
           Time For Wrap Up!
         </Typography>
       </Paper>
