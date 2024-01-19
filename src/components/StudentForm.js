@@ -153,17 +153,16 @@ function StudentForm() {
             </RadioGroup>
           </Container>
         </Box>
-        <Buttons showWrapUp={showWrapUp} setShowWrapUp={setShowWrapUp}/>
-        {showWrapUp ? (
-          <WrapUp
-            name={lessonInfo.name}
-            howDo={lessonInfo.howDo}
-            topic={lessonInfo.topic}
-            nextLesson={lessonInfo.nextLesson}
-            mainContent={lessonInfo.mainContent}
-            newStudent={lessonInfo.newStudent}
-          />
-        ) : null}
+        <Buttons showWrapUp={showWrapUp} setShowWrapUp={setShowWrapUp} />
+        <WrapUp
+          name={lessonInfo.name}
+          howDo={lessonInfo.howDo}
+          topic={lessonInfo.topic}
+          nextLesson={lessonInfo.nextLesson}
+          mainContent={lessonInfo.mainContent}
+          newStudent={lessonInfo.newStudent}
+          showWrapUp={showWrapUp}
+        />
       </Paper>
     </Container>
   );
