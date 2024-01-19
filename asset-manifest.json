@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/id-tech-wrap-up/static/css/main.9305d7d8.css",
-    "main.js": "/id-tech-wrap-up/static/js/main.3b212d65.js",
+    "main.css": "/id-tech-wrap-up/static/css/main.ea3fbcb2.css",
+    "main.js": "/id-tech-wrap-up/static/js/main.48874ece.js",
     "static/media/roboto-latin-500-normal.woff2": "/id-tech-wrap-up/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/id-tech-wrap-up/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/id-tech-wrap-up/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -59,11 +59,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/id-tech-wrap-up/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/id-tech-wrap-up/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/id-tech-wrap-up/index.html",
-    "main.9305d7d8.css.map": "/id-tech-wrap-up/static/css/main.9305d7d8.css.map",
-    "main.3b212d65.js.map": "/id-tech-wrap-up/static/js/main.3b212d65.js.map"
+    "main.ea3fbcb2.css.map": "/id-tech-wrap-up/static/css/main.ea3fbcb2.css.map",
+    "main.48874ece.js.map": "/id-tech-wrap-up/static/js/main.48874ece.js.map"
   },
   "entrypoints": [
-    "static/css/main.9305d7d8.css",
-    "static/js/main.3b212d65.js"
+    "static/css/main.ea3fbcb2.css",
+    "static/js/main.48874ece.js"
   ]
 }
