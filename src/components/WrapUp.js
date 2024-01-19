@@ -2,7 +2,15 @@ import { Container, Paper } from "@mui/material";
 import NewStudent from "./NewStudent";
 import ReturningStudent from "./ReturningStudent";
 
-function WrapUp({ name, howDo, mainContent, nextLesson, topic, newStudent, showWrapUp }) {
+function WrapUp({
+  name,
+  howDo,
+  mainContent,
+  nextLesson,
+  topic,
+  newStudent,
+  showWrapUp,
+}) {
   const firstLetter = howDo.toLowerCase()[0];
   const preposition =
     firstLetter === "a" ||
@@ -46,7 +54,12 @@ function WrapUp({ name, howDo, mainContent, nextLesson, topic, newStudent, showW
     return (
       <Container
         disableGutters
-        sx={{ paddingLeft: 2, paddingRight: 2, paddingBottom: 2, display: "none" }}
+        sx={{
+          paddingLeft: 2,
+          paddingRight: 2,
+          paddingBottom: 2,
+          display: "none",
+        }}
       >
         <Paper sx={{ padding: 2 }} className="paper-group" elevation={0}>
           {newStudent ? (
@@ -72,7 +85,6 @@ function WrapUp({ name, howDo, mainContent, nextLesson, topic, newStudent, showW
       </Container>
     );
   }
-  
 }
 
 export default WrapUp;
