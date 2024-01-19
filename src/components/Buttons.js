@@ -11,18 +11,18 @@ function Buttons({ showWrapUp, setShowWrapUp }) {
       align="center"
       maxWidth="xs"
       disableGutters
-      sx={{ paddingLeft: 2, paddingRight: 2 }}
+      sx={{ paddingLeft: 2, paddingRight: 2, paddingBottom: 2 }}
     >
       <Paper className="paper-group" elevation={0}>
       <Button
         variant="contained"
-        sx={{ marginRight: 2, marginTop: 1, marginBottom: 1 }}
+        sx={{ marginRight: 2, marginTop: 1.5, marginBottom: 1.5 }}
       >
         Copy Wrap Up
       </Button>
       <Button
         variant="contained"
-        sx={{ marginLeft: 2, marginTop: 1, marginBottom: 1 }}
+        sx={{ marginLeft: 2, marginTop: 1.5, marginBottom: 1.5 }}
         onClick={handleToggleWrapUp}
       >
         {showWrapUp ? "Hide Wrap Up" : "Show Wrap Up"}
