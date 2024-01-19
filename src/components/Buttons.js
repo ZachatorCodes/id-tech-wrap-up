@@ -6,10 +6,14 @@ function Buttons({ showWrapUp, setShowWrapUp }) {
     setShowWrapUp(!showWrapUp);
   }
 
+  function handleCopyButton() {
+    console.log("Clicked")
+  }
+
   return (
     <Container
       align="center"
-      maxWidth="xs"
+      maxWidth="lg"
       disableGutters
       sx={{ paddingLeft: 2, paddingRight: 2, paddingBottom: 2 }}
     >
@@ -17,6 +21,7 @@ function Buttons({ showWrapUp, setShowWrapUp }) {
       <Button
         variant="contained"
         sx={{ marginRight: 2, marginTop: 1.5, marginBottom: 1.5 }}
+        onClick={handleCopyButton}
       >
         Copy Wrap Up
       </Button>

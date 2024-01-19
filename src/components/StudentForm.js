@@ -122,7 +122,7 @@ function StudentForm() {
             ></TextField>
           </Container>
           <Container
-            maxWidth="sm"
+            maxWidth="lg"
             disableGutters
             sx={{ paddingBottom: 2, paddingLeft: 2, paddingRight: 2 }}
           >
