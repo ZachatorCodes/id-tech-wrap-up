@@ -13,8 +13,11 @@ function WrapUp({ name, howDo, mainContent, nextLesson, topic, newStudent }) {
       ? "an"
       : "a";
   return (
-    <Container>
-      <Paper>
+    <Container
+      disableGutters
+      sx={{ paddingLeft: 2, paddingRight: 2, paddingBottom: 2 }}
+    >
+      <Paper sx={{ padding: 2 }} className="paper-group" elevation={0}>
         {newStudent ? (
           <NewStudent
             name={name}
