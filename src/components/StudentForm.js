@@ -86,7 +86,6 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
           multiline
           value={lessonInfo.mainContent}
           onChange={handleChange}
-          rows={3}
           sx={{ width: "100%", background: "#ffffff" }}
         ></TextField>
       </Container>
@@ -101,7 +100,6 @@ function StudentForm({ lessonInfo, setLessonInfo }) {
           name="nextLesson"
           label="For Next Lesson..."
           multiline
-          rows={3}
           sx={{ width: "100%", background: "#ffffff" }}
         ></TextField>
       </Container>
