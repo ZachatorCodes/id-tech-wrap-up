@@ -4,6 +4,8 @@ iD Tech Wrap Up Generator is a simple React application created to generate the 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Click [here](https://zachatorcodes.github.io/id-tech-wrap-up/) to visit the deployed version of the application.
+
 ## Installation
 
 - In order to install the application, please `fork` and `clone` this repository to your local device.
